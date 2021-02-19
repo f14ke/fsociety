@@ -1,0 +1,920 @@
+(The episode begins with a “previously on” segment. It opens on Tyrell in his meeting with Elliot and a series of E-Corp lawyers)
+
+TYRELL
+I will be the youngest executive this company has ever seen.
+
+(Ollie is taking a CD from Cisco on the street. As that conversation plays out, the screen cuts to Cisco having access to Ollie’s laptop via hacking)
+
+OLLIE
+All right, you know, I'll take it if you leave us alone. All right?
+
+CISCO
+Thank you. Check track two out.
+
+OLLIE
+I will, track two.
+
+CISCO
+All right, man.
+
+(Gideon is talking to Elliot at work)
+
+GIDEON
+Why didn't you tell me about the DAT file?
+
+(Elliot and Mr Robot sit on the edge of a pier.)
+
+ELLIOT
+Worked at Evil Corp his whole life. Then out of the blue, he got fired. No one knew why. He had leukemia. Made me swear to never tell anyone. Finally, I got so worried, told my mom. And when he found out, he got pissed.
+
+MR ROBOT
+You ever think you deserved it?
+
+ELLIOT
+I was eight years old.
+
+(Mr Robot pushes Elliot off the edge of a pier)
+
+MR ROBOT
+You didn't commit to the sacred pact you had formed.
+
+(The “previously on” segment ends as the episode begins with Tyrell. The episode features a series of cuts between Tyrell in front of a mirror and him preparing for the meeting by running through the city and doing pushups. He is tying his tie and practicing his speech for the CEO of Evil Corp, Phillip Price. Near the end of the speech, be begins hitting himself repeatedly)
+
+TYRELL
+My approach within our business units, is to first invest in new technologies and develop prototypes in order to understand the technology potential. Because despite the recent success of our cybersecurity team, our company currently still has seventy-two potential hacker vulnerabilities in our primary and second No, wait a second You stupid piece of shit. Again. Our company currently still has 73 potential hacker vulnerabilities in our primary and secondary data centers. Now is not the time to be encumbered by the company's tragic and shameful loss of our chief tech-- Too formal, God damn it! Warm it up, don't be a cold robot. Again! Now is not the time to be encumbered by the company's tragic and shameful loss of our Chief Technology Officer. We have to be swift in naming a replacement CTO. And, sir, I would like to suggest it be me. For the sake of our company that we make our decision today. My promotion... My internal promotion shows not only our confidence as a company, but strength in our boldness to the public. Thank you for your time. You will be the next CTO of this company. You will be the next CTO of this company. You will be the next CTO of this company.
+
+(The scene fades to Tyrell sitting in the waiting area near Price’s office. Anwar, Price’s secretary, watches Tyrell anxiously sit with some hard to place interest)
+
+ANWAR
+You sure you don't want anything? Pellegrino? Tea?
+
+(Phillip Price leaves his office. Tyrol stands and approaches him)
+
+TYRELL
+Sir, thank you again for seeing me.
+
+PRICE
+Tyrell, I'm gonna have to reschedule this. Anwar, set up another time.
+
+TYRELL
+Sir, it's just that I think that—
+
+PRICE
+I get it, I get it. We'll get another meeting on the books right away. We've got a really good CTO candidate the board is very excited about. They're not ready to discuss it yet. We'll loop you in. Just give us a couple of weeks. Hmm? Uh, put Wellick back on the books. Two weeks. Oh, nice tie. Let me guess. Brioni? Great taste, as always. Be well.
+
+(Price exits, as Tyrell leans over the reception deskl)
+
+ANWAR
+I'll email your assistant the details.
+
+TYRELL
+If you could, just email it to me directly. This is too important for me to miss.
+
+(The scene shifts to Tyrell’s SUV. Mr Sutherland, who was driving, stops the car under a bridge. Mr Sutherland opens the car door for Tyrell, who exits the car, takes off his jacket, and puts on blue rubber gloves. A homeless man approaches. Tyrol picks up a stack of money)
+
+MR SUTHERLAND
+Mr. Wellick, we're here.
+
+HOMELESS MAN
+Do you think I could have 300 this time?
+
+TYRELL
+Spoken like a true capitalist.
+
+(Tyrell hands the man some money)
+
+HOMELESS MAN
+Bad day at the office? No kicking.
+
+(Tyrell proceeds to beat the man up.)
+
+Argh. Please. Enough.
+
+(Tyrol doesn't stop)
+
+No more.
+
+(After one last hit, Tyrell stops, takes the gloves off and put them in a ziplock bag. He puts his jacket on, and gets back into his car. Mr. Sutherland drives away as the homeless man lies in pain on the ground.)
+
+(The scene shifts to Elliot in a hospital room. He is bruised and bloodied. As his vision clears, he sees Shayla and Krista in his room)
+
+ELLIOT (V.O.)
+Most coders think debugging software is about fixing a mistake, but that's bullshit. Debugging's actually all about finding the bug. About understanding why the bug was there to begin with. About knowing that its existence was no accident. It came to you to deliver a message, like an unconscious bubble floating to the surface, popping with a revelation you've secretly known all along. I don't know why I'm saying all of this. Maybe it's because I'm pumped up on whatever smack legal drug dealers like Eli Lilly make money off nowadays. But usually it's because there's a sense it's coming. A bug buzzing its way towards me to gum up the works until it forces me to make a call. "Kill me or embrace me." Or maybe I'm just freaking out because I never thought I'd wake up to find these two women staring back at me.
+
+SHAYLA
+Are you awake?
+
+ELLIOT
+I don't know. What are you doing here?
+
+SHAYLA
+We talked, maybe a few hours ago when I first got here. You don't remember? They said I was your emergency contact.
+
+ELLIOT
+Um, all right.
+
+SHAYLA
+Um You told them to call your psychiatrist. You can't leave until you talk to one. So I'm gonna wait outside.
+
+(Shayla steps outside the hospital room, leaving Krista and Elliot alone to talk)
+
+ELLIOT
+Hey.
+
+KRISTA
+Do you remember requesting me from the staff? You requested me because
+
+ELLIOT
+The police said that I got jumped by a bunch of kids.
+
+KRISTA
+It's not the end of the world. They wanted to do a full drug panel and you refused. May I ask why? Elliot, if we can't have a conversation about this—
+
+ELLIOT
+I've been taking morphine.
+
+KRISTA
+Why?
+
+ELLIOT
+I don't have a good enough reason to give you. I Wish I did, but I don’t.
+
+KRISTA
+Maybe we should consider rehab.
+
+ELLIOT
+I'm not a junkie.
+
+KRISTA
+Then you'll need to prove it to me. Submit to a bimonthly drug test. Voluntarily. That's the only way that I'll recommend your release.
+
+(As Elliot goes into voice over, the scene briefly goes to Elliot at his computer, hacking the hospital’s records, to turn his positive drug test to a negative)
+
+ELLIOT (V.O.)
+Hospitals, a heavily networked one like this are almost too easy to hack. This is William Highsmith. He's not only the head of the IT department here, he is the IT department. He's also an idiot. Not that I blame him because the people that hire him are also idiots. The poor guy only gets a budget of about $7,000 bucks a year. And he's supposed to protect their network from people like me? He never stood a chance. He uses useless virus scans, dated servers, and security software that runs on Windows 98. It's one of the reasons why I made this place my primary care facility. I can make my health records look like every other obedient zombie out there.
+
+(The scene goes back to Elliot and Krista in his hospital room)
+
+ELLIOT
+Okay. You don't have to worry. I'm not going to do morphine again.
+
+ELLIOT (V.O.)
+Like I said, the most difficult thing about debugging isn't fixing the bug, it's all about finding the bug. For Evil Corp, Mr. Robot found that bug in me. I was the mistake that led to all of this.
+
+(The scene shifts to Elliot and Shayla at their building. They are on their flat, going into his apartment)
+
+SHAYLA
+I have to ask you one thing. Did you have something to do with Vera getting busted? Shit, Elliot. You said you weren't gonna do anything. He's on murder charges, do you know that? His whole crew bounced. I mean, I I don't know what I'm gonna do for money now. Just tell me, Elliot. And don't lie. Did you do something?
+
+ELLIOT
+No. Hmm.
+
+SHAYLA
+Hey.
+
+ELLIOT
+Hey.
+
+SHAYLA
+Are you okay? - I mean with everything that happened to--
+
+ELLIOT
+I'm fine.
+
+(Shayla notices that Elliot’s door is ajar. They enter his apartment, and see Darlene is there)
+
+SHAYLA
+What happened to your door?
+
+ELLIOT
+You're not supposed to be here, okay? I changed the locks for a reason.
+
+DARLENE
+Mmm. Interesting toy, but you may want to spend a little more scratch if you actually want it to, you know, work. Check it, Jessica Alba says she wants to join fsociety. Jesus, what happened to your face?
+
+ELLIOT
+What's going on?
+
+DARLENE
+Well, I'm not the princess of social graces, but typically it goes something like, "Hi, this is Darlene”
+
+ELLIOT
+Stop. You need to leave.
+
+DARLENE
+Babe, seriously, we have a lot of shit to discuss, so if you wouldn't mind Get out.
+I suggest you get a grip. I mean...
+
+ELLIOT (V.O.)
+What was she talking about?
+
+ELLIOT
+I gotta get to work.
+
+DARLENE
+Work? Are you serious? You can't go to work. You have to call in sick.
+
+ELLIOT
+I have to go.
+
+ELLIOT (V.O.)
+A bug is never just a mistake. It represents something bigger. An error of thinking that makes you who you are.
+
+(Scene shifts to Angela jogging outside. A man runs past her, dropping a wallet. She picks up the wallet and chases him down the street, handing him the wallet)
+
+ANGELA
+Sir! Sir! Sir, you dropped your wallet!
+
+MAN
+Thanks.
+
+ANGELA
+Sure.
+
+(The man sprints away as a woman runs by. She approaches Angela, clearly in pursuit of the man who just ran by)
+
+WOMAN
+Stop! Stop! He stole my purse! That was your wallet? Yes, that was my wallet you just gave him.
+
+(Angela stands there, perplexed.)
+
+(The scene shifts to Ollie on the phone with Stella, his mistress. They are clearly mid-argument)
+
+OLLIE
+Stop! He got into my system. And he wants me to put the CD on one of the computers at work.
+
+STELLA (VOICE THROUGH PHONE)
+Why does he wanna do that?
+
+ANGELA
+I don't know, Stella, he didn't give me a full explanation.
+
+STELLA (VOICE THROUGH PHONE)
+So, he's got naked pics of me?
+
+OLLIE
+Is that the only thing you're seriously taking away from this conversation?
+
+(Angela enters their apartment post-workout. She’s still shaken from the earlier incident. Ollie hangs up quickly)
+
+OLLIE
+Hey, babe.
+
+ANGELA
+Hey.
+
+OLLIE
+How was your run?
+
+ANGELA
+Strange. Someone dropped their wallet. And I picked it up to give it to them, but then this—
+
+OLLIE
+Nothing strange about that, just shows how good of a person you are. Always have been. Almost to a fault.
+
+ANGELA
+What does that mean?
+
+OLLIE
+Just that you... You're too good for the world. That's probably why I love you.
+
+ANGELA
+I'm gonna hop in the shower.
+
+(Angela goes into the bathroom and running water is heard. Ollie gets a call on the computer from a distorted voice)
+
+OLLIE
+I told you I can't talk.
+
+VOICE
+You have 100 hours precisely. After that, everything we own will be released.
+
+(The scene shifts to Gideon’s office at AllSafe. He is having a meeting with Lloyd, Ollie, Angela, and Elliot. Elliot’s mind is elsewhere).
+
+GIDEON
+And it's not enough just to focus your attention on the logs. We should also monitor social-media traffic, as well as IRC, Pastebin. And set up scripts to keep going 24/7. We might get lucky, we might get sloppy, make a mistake, you know, catch some
+
+ELLIOT (V.O.)
+This is the world we live in, people relying on each other's mistakes to manipulate one another, use one another, even relate to one another. The warm, messy circle of humanity.
+
+GIDEON
+Elliot? I'm inviting you guys, uh, to dinner tonight. Morton's notwithstanding, I cook a mean steak. What? Can't a boss invite his favorite employees to dinner?
+
+ELLIOT
+No, that's cool, but I got plans.
+
+GIDEON
+Can you guys give us a minute?
+
+LLOYD, ANGELA, AND OLLIE
+Yeah.
+
+(Lloyd, Angela, and Ollie all leave Gideon’s office)
+
+GIDEON
+You wanna tell me what's going on?
+
+ELLIOT
+Not really.
+
+GIDEON
+Well You're missing work, you come in looking like that, and you expect me not to ask questions? Look, I don't know how much you want me asking about your personal life. But—
+
+ELLIOT
+Not at all, actually. I mean, I don't mean to be rude, just I'm just being honest.
+
+(Elliot leaves Gideon’s office and walks over to his cubicle)
+
+ELLIOT (V.O.)
+Mr. Robot may have found Evil Corp's bug, but he didn't find mine. That's the only way to protect myself, never show them my source code. Close myself off.
+Create my cold, perfect maze where no one can ever find me.
+
+(Someone in a chair in a cubicle next to him turns around. It’s Mr. Robot)
+
+MR ROBOT
+Elliot! I cannot believe you work here. This place is a shithole! Look, I thought I'd swing by, take you to lunch.
+
+(A pretty red head walks by and smiles at Elliot. When Mr Robot begins to talk to her, she glares at him and walks away)
+
+Oh, that's nice. I think she likes you, bud. All right, fine, I'll take her. But let the record show, I was trying to be a good wing man. Oh, calm down! Shit. I'm not that into redheads anyway. The whole nation of Ireland makes my dick soft.
+
+ELLIOT
+Leave.
+
+MR ROBOT
+Darlene said we need to talk.
+
+ELLIOT
+Leave, now.
+
+MR ROBOT
+You're right, probably shouldn't talk here. Let's go to that bar next door.
+
+ELLIOT
+I'm not going anywhere with you.
+
+MR ROBOT
+I'm not going anywhere until you do. So, I can hang out here and create a scene, or you can give me five minutes in the bar next door. Either way, I'm gonna have fun.
+
+(The scene changes to Mr Robot and Elliot sitting at a bar. Mr Robot sips an appletini)
+
+MR ROBOT
+Dealer's choice.
+
+ELLIOT
+Mmm.
+
+MR ROBOT
+What? It's an appletini.
+
+ELLIOT
+I should kick your ass.
+
+MR ROBOT
+If that'll make us square, you have my blessing.
+
+ELLIOT
+Nah, man, I want nothing to do with you. You're a maniac.
+
+(A bar tender approaches Elliot and Mr Robot)
+
+BAR TENDER
+What can I get for you?
+
+ELLIOT
+Uh, nothing.
+
+MR ROBOT
+Uh, you should probably order something. I'd recommend this.
+
+ELLIOT
+Fine. I'll, I'll have a Appletini.
+
+(The bar tender gives them a strange look before leaving to make the drink)
+
+MR ROBOT
+You should it as a compliment, guy, these things are goddamn delicious. I get it, compliments make me uncomfortable, too.
+
+ELLIOT
+You know, I find that hard to believe.
+
+MR ROBOT
+Yeah, who am I kidding? I love compliments.
+
+(The bar tender returns with Elliot’s appletini)
+
+BAR TENDER
+$12.
+
+(Elliot, bemused at the price, pays, then downs the drink)
+
+MR ROBOT
+I really don't think you enjoyed that. I suggest sipping it
+
+ELLIOT
+Last chance. What do you want?
+
+MR ROBOT
+I'm sorry for what I did.
+
+ELLIOT
+I don't buy it. More importantly, I don't give a shit.
+
+MR ROBOT
+Hey, I never wanted to hurt you. People who get violent, get that way because they can't communicate. Your dad I bet he felt shitty for doing what he did. I'm sure he wanted to apologize, too. Sometimes pushing your kid away is just easier. Don't stay mad at him too long, kiddo.
+
+(Mr Robot begins to leave the bar)
+
+ELLIOT
+You're leaving?
+
+MR ROBOT
+That's what you want, isn't it?
+
+ELLIOT
+What about your plan?
+
+MR ROBOT
+Plan? You're the key to the whole thing. Without you, there is no plan.
+
+ELLIOT
+That's it? It's over? You expect me to believe that?
+
+MR ROBOT
+See you in another life.
+
+(Mr Robot leaves.)
+
+(The scene shifts to Elliot walking the streets. He is smiling. The screen is much brighter than before, with lots of colors and intense saturation. Peppy music plays as Elliot drinks a large Starbucks drink. This scene of Elliot walking to work is inter spliced with happy people doing the things he references)
+
+ELLIOT (V.O.)
+Did you hear that? I can't believe it. Is that really happening? Fsociety's finally over.
+The recent glitch in the otherwise neat reality I created over the years, I'll never slip up like that again. I'm gonna be more normal now. Maybe Shayla could even be my girlfriend. I'll go see those stupid Marvel movies with her. I'll join a gym. I'll heart things on Instagram. I'll drink vanilla lattes. I'm gonna lead a bug-free life from now on. Anything to protect my perfect maze.
+
+(When the voice over ends, Elliot has arrived at Gideon’s office with his Starbucks. He takes out his ear buds as the music abruptly stops. He enters the office)
+
+ELLIOT
+Hey, Gideon. Is that dinner still on for tonight?
+
+GIDEON
+Um, yeah, sure. Uh, uh, you want You want to come?
+
+ELLIOT
+Yeah.
+
+GIDEON
+Great.
+
+ELLIOT
+Can I bring my girlfriend?
+
+GIDEON
+You have a girlfriend?
+
+ELLIOT
+Well, I haven't asked her yet, but I will. Hopefully she'll say “yes.”
+
+GIDEON
+Uh, yeah, sure.
+
+ELLIOT
+Perfect. Thanks.
+
+(Elliot leaves the office. Once he’s gone, Gideon motions to his secretary, who is outside his door. She opens the door and leans in, just as shocked by the change in Elliot as Gideon is)
+
+GIDEON
+Was he drinking Starbucks?
+
+(The scene shifts to Ollie at his computer at work. He is about to put the CD in the server, but still not sure if he should. Angela approaches before he can)
+
+ANGELA
+Are you still trying to rip that CD?
+
+OLLIE
+Yeah, it's all scratched up. Let's get outta here.
+
+(The scene shifts to Tyrell at home. He is changing in his walk in closet and looking at his smart phone, on which Anwar’s instagram is open. He pulls up a picture of Anwar and some friends at a gay bar. He changes from his formal dress shirt, tie, and jacket, and puts on a fitted sweater. Joanna, his wife enters. She is a beautiful woman, with long brown hair. She is very pregnant, and the same height as her husband in flats. There is something chilling and unsettling about this woman. She speaks to him in Danish, as he speaks to her in Swedish. She questions where he is going, and he says its for work, which he is doing “for us”. She wonders if its really for them or just for himself. He aggressively grabs her face, pulls it near his, and assures her that his self-interest is in their best interest. He leaves.)
+
+(The scene shifts to Elliot and Shayla sitting on a couch in Shayla’s apartment.)
+
+ELLIOT
+My boss invited me to a dinner party at his place tonight. Thought you could come as my girlfriend.
+
+SHAYLA
+What? Are you actually asking me to be your girlfriend right now?
+
+ELLIOT
+Yeah. Anyway, I need you. I'm not good in social situations like that.
+
+SHAYLA
+There is something seriously wrong with you. I’m-- I'm not gonna be used anymore. Why don't you ask the girl from this morning, okay? She seems like she might wanna go to some stupid, stuffy dinner party. You don't actually know me. All you know is that I’m--
+
+ELLIOT (V.O.)
+Of course I know Shayla. I hacked her email as soon as she moved in next door. With a simple phishing scam, I owned her password pretty easily--
+
+SHAYLA
+I'm not talking about the stuff you can find online. I'm talking about the real me.
+
+ELLIOT
+Tell me then.
+
+SHAYLA
+No. Forget it.
+
+ELLIOT
+I wanna know.
+
+(Shayla walks over to a chest, and carefully pulls out some rolls of fabric. When she unrolls them, we see lovely collages.)
+
+ELLIOT (V.O.)
+What is this?
+
+ELLIOT
+It's beautiful.
+
+ELLIOT (V.O.)
+I've never seen this before, she must never posted online.
+
+SHAYLA
+Um, I mean, a lot of 'ems not They're not done.
+
+ELLIOT (V.O.)
+She's got her own private maze, too.
+
+SHAYLA
+Took a lot of different pieces, um, from different things. From my photographs or drawings. And Like, there's this one. Um, it's really fucking corny. But it's like Has everything. The kids and the---
+
+ELLIOT (V.O.)
+Shayla 's bug was always elusive to me. Maybe this was it, wanting normalcy, but stuck in the outer fringes. Not knowing how to participate. Just like me.
+
+ELLIOT
+Can I kiss you?
+
+(Shayla kisses Elliot.)
+
+SHAYLA
+Next time, don't ask. It's lame.
+
+ELLIOT (V.O.)
+Bugs usually get a bad rep. But sometimes...
+
+SHAYLA
+Don't let me down, okay?
+
+ELLIOT (V.O.)
+When a bug finally makes itself known, it can be exhilarating. Like you just unlocked something. A grand opportunity waiting to be taken advantage of.
+
+(The scene shifts to outside of a gay bar. Tyrell’s SUV drives up and he gets out. Anwar leaves with a group of friends. Tyrell stops him)
+
+ANWAR
+Mr. Wellick? Hey.
+
+TYRELL
+What was your name again?
+
+ANWAR
+Anwar. I didn't know you came to places like this.
+
+TYRELL
+I don’t.
+
+ANWAR
+What do you mean? You're here now.
+
+TYRELL
+I'm here because you are.
+
+ANWAR
+What? I'm sorry, I don't get it.
+
+TYRELL
+I think you're beautiful. I wanna take you home.
+
+ANWAR
+Wait, I thought you were married.
+
+(Tyrell kisses Anwar)
+
+ELLIOT (V.O.)
+Because, after all, a bug's only purpose, its only reason for existence, is to be a mistake that needs fixing. To help you right a wrong. And what feels better than that?
+
+(The scene shifts to outside Gideon’s door. Elliot and Shayla arrive to find Angela and Ollie waiting)
+
+OLLIE
+So, Elliot, do you think you should introduce us?
+
+ELLIOT
+Oh, um, Shayla, Angela and Ollie.
+
+OLLIE
+You, uh You look lovely this evening.
+
+(Lloyd arrives)
+
+LLOYD
+What up guys? You just get here?
+
+OLLIE
+Nice suit.
+
+LLOYD
+Thanks, dude.
+
+ANGELA
+What is up with you? You've been fidgeting all night.
+
+OLLIE
+Maybe we should try the doorbell again.
+
+(Harry, Gideon’s husband, a friendly, heavier blond man, opens the door)
+
+HARRY
+Hey guys! How have you been standing out here? The doorbell is broken. I should have warned you. Come in! I'm Harry, by the way.
+
+(Angela, Ollie, Shayla, Elliot, and Lloyd all hesitantly enter)
+
+ANGELA
+Angela. Nice to meet you.
+
+HARRY
+Nice to meet you.
+
+OLLIE
+Hey.
+
+HARRY
+Always nice to put a face with an employee badge number.
+
+OLLIE
+Right?
+
+HARRY
+Ollie, how long have you guys been together?
+
+ANGELA
+Uh, two and a half years.
+
+OLLIE
+Two years.
+
+HARRY
+Okay. Elliot, how long have you and Shayla been together?
+
+ELLIOT
+Well, uh Um, just Just today.
+
+(Gideon enters)
+
+GIDEON
+Okay, enough grilling of the guests. Let's check on the real grill, shall we? Elliot, I could use your help.
+
+(Gideon and Elliot leave for Gideon’s deck, where the grill is. Gideon begins cooking while Elliot awkwardly stands there)
+
+So, I have a confession. I had the sys admins of the data center in Dulles check that server again.
+
+ELLIOT (V.O.)
+Gideon, what did you do?
+
+GIDEON
+Of course, there was nothing. I have no idea what there was to even be suspicious about. I mean, what possible motivation would you have to do anything?
+
+ELLIOT (V.O.)
+Gideon has to let this go. If he comes near this hornet's nest, I'm not sure I can save him from it. I have to kill any suspicion left.
+
+GIDEON
+You've been nothing, but a hard worker for Allsafe. So, I apologize.
+
+ELLIOT
+After the conversation on the plane, I knew what was at stake. The whole company.
+I was worried that the DAT file I found wasn't the right one, and I just didn't want to get your hopes up in case I was wrong. That's why I didn't tell you before the meeting.
+
+ELLIOT (V.O.)
+Shit, I'm gonna have to let him hug me, aren't I?
+
+(Gideon hugs Elliot, who has no idea what to do. He hates this)
+
+GIDEON
+You're such a brilliant engineer, Elliot. You should never doubt your skills, no matter how much pressure I put on you. And you certainly don't have to keep anything from me. I care about you.
+
+(The scene shifts back to Gideon and Harry’s apartment, later that same evening. Ollie, Shayla, Lloyd, Gideon, and Harry are all chatting pleasantly, showing photos, sharing stories, laughing, etc… Angela and Elliot sit in the window together)
+
+ANGELA
+From the Mixed-Up Files of Basil E. Frankweiler. That's where I got the idea, remember? I wanted to be Claudia Kincaid so bad. Even her name was cool. Remember, we thought we were going to the Met, somehow we ended up at the Queens Museum instead.
+
+ELLIOT
+No Google Maps back then.
+
+ANGELA
+I loved running away with you. Somehow, when you're eight, running away can be fun.
+
+ELLIOT (V.O.)
+The normal life. Smiles, dinner parties, childhood stories. I could get used to this, maybe even like it.
+
+(The tv, which had been on the news lightly in the background, is turned up. Everyone walks over to stand in front of it)
+
+ELLIOT
+What's wrong?
+
+NEWS ANCHOR
+Evil Corp's hacking scandal continues with the release of these latest emails. Information stemming from the latest dump reveals that Terry Colby was one of three high-level executives involved in the cover-up of the widely publicized Washington Township Toxic Waste Scandal. If these reports are true, Colby may be facing more indictments. In the ensuing 24 months after the alleged toxic waste leak in 1993, 26 employees died from similar types of leukemia. Evil Corp, however, managed to get the class action lawsuit filed against it by the surviving victims dismissed, claiming there was no direct evidence linking their factories to the diagnoses. Now, these emails indicate that Colby was in fact aware of the dangerous levels of toxicity and kept it a secret, as it quote, "Would not be cost-effective "to retool the current systems in place, even if there are potential lawsuits." End quote. Mr. Colby was unavailable for comment, but his lawyers…
+
+ELLIOT (V.O.)
+My perfect maze crumbling before my eyes.
+
+NEWS ANCHOR
+data dump are further proof Colby was set up. But they didn't indicate by whom.
+
+ELLIOT (V.O.)
+There's nothing to hide behind. I didn't think it existed, but there it was, is. Mr. Robot finally found my bug.
+
+NEWS ANCHOR
+linking the waste levels in Washington Township to the victim's illnesses. Legal analysts support the claim that there is not enough evidence to...
+
+ELLIOT
+What's going on?
+
+ANGELA
+That's how my mom, um, and Elliot's dad... I have to go.
+
+OLLIE
+Well, wait Wait, let me come with you.
+
+ANGELA
+No, I'd rather you didn’t.
+
+NEWS ANCHOR
+Evidence in the Washington Township scandal. Terry Colby remains under investigation for his alleged involvement with the Evil Corp executives because there was no evidence linking the waste dump to leukemia. Evil Corp...
+
+(The scene shifts to Elliot fleeing the party, walking the streets of New York. As a buss pulls away from a stop, young Elliot and his mother are revealed sitting on a bench in flashback. Elliot is crying, but his mother is coldly smoking her cigarette. They are both dressed formally and all in black - clearly coming from a funeral)
+
+ELLIOT’S MOTHER
+Don't look so sad. He did this to himself. He gave in. He was a coward. He was weak and pathetic, and, in the end, that's what killed your father. Why are you crying? Don't ask so many questions.
+
+YOUNG ELLIOT
+I miss him.
+
+ELLIOT’S MOTHER
+There's no point to that.
+
+YOUNG ELLIOT
+But I do.
+
+ELLIOT’S MOTHER
+Then you're just as weak as him.
+
+YOUNG ELLIOT
+You're not sad?
+
+ELLIOT’S MOTHER
+Why should I be? It's a beautiful night. The weather is nice. And I'm enjoying my cigarette.
+
+ELLIOT (V.O.)
+The bug forces the software to adapt, evolving something new because of it.
+Work around it or work through it No matter what, it changes, it becomes something new, the next version, the inevitable upgrade.
+
+(The scene shifts to a wall in an apartment. Noises indicate that people are having sex in the other room. As the camera pans to the open door, it is revealed to be Tyrell and Anwar, nearing the finish of the encounter initiated earlier. As Anwar flops down onto the bed, Tyrell stays standing on his knees and checks his heart rate. He grabs a towel and hands it to Anwar)
+
+ANWAR
+You're a strange creature.
+
+TYRELL
+I'm just a businessman.
+
+ANWAR
+And that's about as clean as I'm gonna get it.
+
+TYRELL
+You have to do the rest in the shower
+
+ANWAR
+I don't mind being a little dirty.
+
+TYRELL
+I do.
+
+(Anwar stands and leaves for the bathroom. The running water can be heard from the other room.)
+
+ANWAR
+You should join me!
+
+TYRELL
+Yeah, I'll be there in a minute.
+
+(Tyrell begins to dress again, and grabs Anwar’s phone. He places the hack he intended to on the phone, and sneaks out of the apartment.)
+
+(The scene shifts to Ollie and Angela’s apartment. Ollie is sitting in the apartment as Angela enters)
+
+OLLIE
+Hey.
+
+ANGELA
+I'm sorry that I ran off like that.
+
+OLLIE
+Did you talk to him?
+
+ANGELA
+Nope. He wasn't home.
+
+OLLIE
+Well, I'm here.
+
+ANGELA
+I want to talk to you about everything, just not tonight, okay?
+
+OLLIE
+So, you'd talk to him, but not your own boyfriend?
+
+ANGELA
+It's different, Ollie. Both of our parents died because-- That's how we know each other. I really don't wanna talk about this right now.
+
+OLLIE
+Well, what if I do?
+
+ANGELA
+What if you do what?
+
+OLLIE
+Wanna talk! About Something.
+
+ANGELA
+What the hell are you talking about?
+
+OLLIE
+I have to tell you something.
+
+(The scene cuts to later that evening. Angela is holding their computer and going through all of the information Cisco has, staying a while on the chats with Stella. She has been looking at this for a while)
+
+OLLIE
+I don't know why you’re-- You're putting yourself through this, you don't have to keep looking at it. All right? It meant nothing. Okay, I know I sound like a broken record, but I love you, and I wanna be with you.
+
+ANGELA
+Stop speaking.
+
+OLLIE
+Just tell me what you need in order for me to fix this, and I'll do it.
+
+ANGELA
+We need to break up.
+
+OLLIE
+Angela, come on.
+
+ANGELA
+What choice did you give me, Ollie?
+
+OLLIE
+Look, I know I have a problem, I'm not denying that.
+
+ANGELA
+Well maybe my problem is I can't be with a guy with your problem. Where's the CD?
+
+OLLIE
+It's in my In my bag. Why?
+
+ANGELA
+He has my bank account, Ollie. And my dad's bank account.
+
+OLLIE
+How did they—
+
+ANGELA
+Our accounts are linked because of my student loans. I used your laptop to access it. He has my dad's social security, his credit card numbers, everything.
+
+OLLIE
+Okay. Okay, that is bad, but I'm But I'm sure the cops will figure out a way—
+
+ANGELA
+If we don't do what this guy says and we go to the cops, then he's just gonna sell our information to the highest bidder, and me and my dad are completely screwed.
+Do you have any idea how difficult it is to come back from massive identity theft like this?
+
+OLLIE
+What are you saying? Angela? Are you crazy? No. We cannot just infect Allsafe's network because of this. I'll lose my job!
+
+ANGELA
+And there it is.
+
+OLLIE
+You'll lose your job too, if that matters. Besides, even if we put the CD in, who says this guy won't just do all of this anyway? Hey. Hey, hey. Come here. Look at me. We are going to figure this out. Okay?
+
+ANGELA
+You're right. You're right. I'm sorry. I'm just scared. I don't wanna break up with you. I'm sorry that I said that.
+
+OLLIE
+I love you so much.
+
+(The scene shifts to Gideon at AllSafe. He is looking at a computer and on the phone.)
+
+VOICE OF DULLES
+This is Edmond Dulles.
+
+GIDEON
+Yeah, hi. This, um, Gideon Goddard at Allsafe Security. I need to talk to Sean Skyler about server CS30 again.
+
+VIOCE OF DULLES
+Hold please. I'll transfer you.
+
+GIDEON
+Mmm-hmm.
+
+(The scene shifts to Tyrell entering his home right after leaving Anwar’s apartment. Opera music is playing. His wife is lying on their bed in lingerie and a blindfold. As the two converse - he speaks in Swedish and she in Danish. [If someone who speaks the language(s) could write in the dialogue, that’d be fantastic], as she instructs him to grab the ties from their closet. He is hesitant, tired from his evening and worried about what the S&M she is proposing would do to their baby. She says she doesn’t care. She wants him to detail his evening, and the next day, wants him to set up a dinner with Scott Knowles. She then makes him put a ball gag in her mouth)
