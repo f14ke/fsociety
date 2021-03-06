@@ -1,6 +1,7 @@
 import os
 import re
 import numpy as np
+import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
@@ -86,22 +87,49 @@ def extract_sentences():
     return sentences
 
 
+def nodes():
+    """
+
+    Retourne une liste de dictionnaires :
+        {'noeud1': 'fuck', 'noeud2': 'society', 'count': '50'}
+    """
+    nodes = pd.DataFrame(columns=['noeud1', 'noeud2', 'count'])
+
+    sentences = extract_sentences()
+    for sentence in sentences: #Pour chaque phrase
+        sentence_list = sentence.tolist()
+        for i in range(0, len(sentence_list)-1): #Pour chaqe mot
+            data = [sentence_list[i], sentence_list[i+1], 1]
+            df = pd.Series(data, index=['noeud1', 'noeud2', 'count'])
+            nodes = nodes.append(df, ignore_index=True)
+    """
+    print(nodes.isin(
+        pd.Series(['hello', 'friend.'], index=['noeud1', 'noeud2'])
+    ))
+    """
+    print(nodes.columns)
+    #! je ne comprends pas comment vérifier si un subset existe. Il me faut spécifier les columns
+    #! dans lesquelles recehrcher. Il faut incrémenter si le lien existe déjà. 
+    #! puis il faudra prévenir networkx que ça existe.
+
+"""
 def graph():
     G = nx.Graph()
-    sentences = extract_sentences()
-    for sentence in sentences:
-        sentence_list = sentence.tolist()
+    
+
         G.add_nodes_from(sentence_list)
-        for i in range(0, len(sentence_list)-1):
+        
             
 
     #nx.petersen_graph(G, with_labels = True,  pos=nx.spring_layout(G)) 
     plt.savefig("test.png")
 
 
-graph()
+graph()"""
 
 
+if __name__ == '__main__':
+    nodes()
 
 """
 A faire :
