@@ -1,6 +1,30 @@
 import os
 import re
 import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+
+
+def clear(string):
+    """
+    Avec une chaîne de caractères en entrée,
+        - retire les '--',
+        - retire les '\n',
+        - retire les '\',
+        - remplace les '\'' par des ''',
+        - met tous les caractères en minuscule
+        - sépare la phrase en une liste de mots
+    Retourne la liste de mots.
+    """
+    return np.char.split( #Séparer les phrases en liste de mots.
+        np.char.lower( #Lowercase
+            np.char.replace(
+                re.sub(r"\\", '',
+                    re.sub(r"\n", '', 
+                        re.sub(r"--", '', string))),
+                "\'", "'")
+        )
+    )
 
 
 def extract_sentences():
@@ -31,20 +55,16 @@ def extract_sentences():
                     #ELLIOT: blabla
                     if re_line_Elliot_two_points.match(lines[i]):
                         sentences.append(
-                            np.char.split( #Séparer les phrases en liste de mots.
-                                np.replace(
-                                    re.sub( #On enlève 'ELLIOT:' et '\n'
-                                        r"\n", '', re.sub(
-                                            re_line_Elliot_two_points_Elliot, '', lines[i])
-                                    ), "\'", "'"
-                                )
+                            clear(#On enlève 'ELLIOT:'
+                                re.sub(
+                                    re_line_Elliot_two_points_Elliot, '', lines[i])
                             )
                         )
                     #MR. ROBOT: blabla
                     elif re_line_Robot_two_points.match(lines[i]):
                         sentences.append(
-                            re.sub(
-                                r"\n", '', re.sub(
+                            clear(
+                                re.sub(
                                     re_line_Robot_two_points_Robot, '', lines[i])
                             )
                         )
@@ -54,28 +74,38 @@ def extract_sentences():
                     #blabla
                     elif(re_line_Elliot_break.match(lines[i])):
                         sentences.append(
-                            re.sub(r"\n", '', lines[i+1])
+                            clear(lines[i+1])
                         )
                         
                     #MR. ROBOT
                     #blabla
                     elif re_line_Robot_break.match(lines[i]):
                         sentences.append(
-                            re.sub(r"\n", '', lines[i+1])
+                            clear(lines[i+1])
                         )
     return sentences
 
 
-sentences = extract_sentences()
-print(sentences)
+def graph():
+    G = nx.Graph()
+    sentences = extract_sentences()
+    for sentence in sentences:
+        sentence_list = sentence.tolist()
+        G.add_nodes_from(sentence_list)
+        for i in range(0, len(sentence_list)-1):
+            
+
+    #nx.petersen_graph(G, with_labels = True,  pos=nx.spring_layout(G)) 
+    plt.savefig("test.png")
+
+
+graph()
 
 
 
 """
 A faire :
 Séparer les phrases qui se terminent par des . ? ! ???
-Enlever les '-', '\'
-Séparer le nettoyage en une fonction clean()
 
 Créer les noeuds https://networkx.org/documentation/stable/tutorial.html ou bien https://pyvis.readthedocs.io/en/latest/tutorial.html
 """
