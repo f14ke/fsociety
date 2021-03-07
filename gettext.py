@@ -134,6 +134,37 @@ if __name__ == '__main__':
 """
 A faire :
 Séparer les phrases qui se terminent par des . ? ! ???
-
 Créer les noeuds https://networkx.org/documentation/stable/tutorial.html ou bien https://pyvis.readthedocs.io/en/latest/tutorial.html
+"""
+
+"""
+def graph(text):
+    G=nx.Graph()
+    # Separer les phrases avec ".","?","!","???""
+    for w in sentences:
+        sentence=text.split('.','?','!','???').clear()
+        for i in words:
+            try:
+                G.nodes[i]['count']+=1
+            except KeyError:
+                G.add_node(i)
+                G.nodes[i]['count']=1
+            for j in words:
+                if i==j or i in fin or j in fin:
+                    continue
+                if len(i)==0 or len(j)==0:
+                    continue
+                try:
+                    G.edges[i,j]['count']+=1
+                except KeyError:
+                    G.add_edge(i,j, count=1)
+return G
+
+# lire le texte et créer les noeuds à partir du texte
+with open('.txt') as f:
+    text=f.read()
+G=graph(text)
+
+plt.figure()
+nx.draw_networkx_edges(width=3, edge_color=blue, alpha=0.5, node_size=200) 
 """
