@@ -137,7 +137,9 @@ Séparer les phrases qui se terminent par des . ? ! ???
 Créer les noeuds https://networkx.org/documentation/stable/tutorial.html ou bien https://pyvis.readthedocs.io/en/latest/tutorial.html
 """
 
-"""
+
+
+
 def graph(text):
     G=nx.Graph()
     # Separer les phrases avec ".","?","!","???""
@@ -158,13 +160,18 @@ def graph(text):
                     G.edges[i,j]['count']+=1
                 except KeyError:
                     G.add_edge(i,j, count=1)
-return G
+    return G
 
 # lire le texte et créer les noeuds à partir du texte
-with open('.txt') as f:
+with open('aep1.txt') as f:
     text=f.read()
 G=graph(text)
 
 plt.figure()
 nx.draw_networkx_edges(width=3, edge_color=blue, alpha=0.5, node_size=200) 
-"""
+
+# ne pas afficher les labels
+# tuto delbot https://colab.research.google.com/drive/1ZR9H2PMFfgI6fvL8AONGD8H2LN_aUdiB?usp=sharing&pli=1#scrollTo=Wk5ZzO8Keynk
+
+# outils de Paul https://tulip.labri.fr/TulipDrupal/ 
+#              https://gephi.org/
