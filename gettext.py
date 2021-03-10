@@ -87,49 +87,62 @@ def extract_sentences():
     return sentences
 
 
+def distance_pull(nodes, node1, node2):
+    """
+    nodes = [[node1, node2, distance], [...]]
+    Ajoute deux noeuds à la liste ou, s'ils y sont déjà, incrémente la valeur de leur distance.
+    """
+    for n in nodes: #Pour chaque noeud
+        if(n[0] == node1 and n[1] == node2): #Si le noeud existe déjà
+            n[2] += 1
+            return
+    nodes.append([node1, node2, 1])
+
+
+
 def nodes():
     """
-
     Retourne une liste de dictionnaires :
-        {'noeud1': 'fuck', 'noeud2': 'society', 'count': '50'}
+        nodes = [[node1, node2, distance], [...]]
     """
-    nodes = pd.DataFrame(columns=['noeud1', 'noeud2', 'count'])
+    nodes = []
 
     sentences = extract_sentences()
     for sentence in sentences: #Pour chaque phrase
         sentence_list = sentence.tolist()
-        for i in range(0, len(sentence_list)-1): #Pour chaqe mot
-            data = [sentence_list[i], sentence_list[i+1], 1]
-            df = pd.Series(data, index=['noeud1', 'noeud2', 'count'])
-            nodes = nodes.append(df, ignore_index=True)
-    """
-    print(nodes.isin(
-        pd.Series(['hello', 'friend.'], index=['noeud1', 'noeud2'])
-    ))
-    """
-    print(nodes.columns)
-    #! je ne comprends pas comment vérifier si un subset existe. Il me faut spécifier les columns
-    #! dans lesquelles recehrcher. Il faut incrémenter si le lien existe déjà. 
-    #! puis il faudra prévenir networkx que ça existe.
-
-"""
-def graph():
-    G = nx.Graph()
+        for i in range(0, len(sentence_list)-1): #Pour chaque mot
+            node = [sentence_list[i], sentence_list[i+1], 1]
+            distance_pull(nodes, sentence_list[i], sentence_list[i+1])
+    
+    return nodes
     
 
-        G.add_nodes_from(sentence_list)
-        
-            
 
-    #nx.petersen_graph(G, with_labels = True,  pos=nx.spring_layout(G)) 
+def graph():
+    G = nx.Graph()
+    no = nodes()
+
+    for n in no:
+        G.add_edge(n[0], n[1])
+
+
+    options = {
+      'node_color' : 'red',
+      'node_size'  : 1,
+      'edge_color' : 'tab:gray',
+      'with_labels': False
+    }
+    #nx.petersen_graph(G, with_labels = True,  pos=nx.spring_layout(G))
+    pos = nx.spring_layout(G,k=0.1)
+    nx.draw(G, pos, **options)
     plt.savefig("test.png")
 
 
-graph()"""
+
 
 
 if __name__ == '__main__':
-    nodes()
+    graph()
 
 """
 A faire :
@@ -139,7 +152,7 @@ Créer les noeuds https://networkx.org/documentation/stable/tutorial.html ou bie
 
 
 
-
+"""
 def graph(text):
     G=nx.Graph()
     # Separer les phrases avec ".","?","!","???""
@@ -169,7 +182,7 @@ G=graph(text)
 
 plt.figure()
 nx.draw_networkx_edges(width=3, edge_color=blue, alpha=0.5, node_size=200) 
-
+"""
 # ne pas afficher les labels
 # tuto delbot https://colab.research.google.com/drive/1ZR9H2PMFfgI6fvL8AONGD8H2LN_aUdiB?usp=sharing&pli=1#scrollTo=Wk5ZzO8Keynk
 
