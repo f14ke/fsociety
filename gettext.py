@@ -17,7 +17,7 @@ def clear(string):
         - sépare la phrase en une liste de mots
     Retourne la liste de mots.
     """
-    return np.char.split( #Séparer les phrases en liste de mots.
+    return np.char.split( #Séparer les phrases en liste de mots. 
         np.char.lower( #Lowercase
             np.char.replace(
                 re.sub(r"\\", '',
@@ -87,22 +87,22 @@ def extract_sentences():
     return sentences
 
 
-def distance_pull(nodes, node1, node2):
+def distance_append(nodes, node1, node2):
     """
     nodes = [[node1, node2, distance], [...]]
     Ajoute deux noeuds à la liste ou, s'ils y sont déjà, incrémente la valeur de leur distance.
     """
     for n in nodes: #Pour chaque noeud
-        if(n[0] == node1 and n[1] == node2): #Si le noeud existe déjà
+        if(n[0] == node1 and n[1] == node2): #Si l'arrête existe déjà
             n[2] += 1
             return
     nodes.append([node1, node2, 1])
 
 
 
-def nodes():
+def nodes_extract():
     """
-    Retourne une liste de dictionnaires :
+    Retourne une liste de listes :
         nodes = [[node1, node2, distance], [...]]
     """
     nodes = []
@@ -112,7 +112,7 @@ def nodes():
         sentence_list = sentence.tolist()
         for i in range(0, len(sentence_list)-1): #Pour chaque mot
             node = [sentence_list[i], sentence_list[i+1], 1]
-            distance_pull(nodes, sentence_list[i], sentence_list[i+1])
+            distance_append(nodes, sentence_list[i], sentence_list[i+1])
     
     return nodes
     
@@ -120,20 +120,23 @@ def nodes():
 
 def graph():
     G = nx.Graph()
-    no = nodes()
+    nodes = nodes_extract()
 
-    for n in no:
-        G.add_edge(n[0], n[1])
-
+    #for n in nodes:
+    #    G.add_edge(n[0], n[1])
+    G.add_weighted_edges_from(nodes)
+    print(len(nodes))
+    print(len(G.edges))
 
     options = {
       'node_color' : 'red',
-      'node_size'  : 1,
+      'node_size'  : 7,
       'edge_color' : 'tab:gray',
       'with_labels': False
     }
     #nx.petersen_graph(G, with_labels = True,  pos=nx.spring_layout(G))
-    pos = nx.spring_layout(G,k=0.1)
+    plt.figure(figsize=(50,50))
+    pos = nx.spring_layout(G,k=0.2, iterations=50) #50 : défaut
     nx.draw(G, pos, **options)
     plt.savefig("test.png")
 
@@ -187,4 +190,4 @@ nx.draw_networkx_edges(width=3, edge_color=blue, alpha=0.5, node_size=200)
 # tuto delbot https://colab.research.google.com/drive/1ZR9H2PMFfgI6fvL8AONGD8H2LN_aUdiB?usp=sharing&pli=1#scrollTo=Wk5ZzO8Keynk
 
 # outils de Paul https://tulip.labri.fr/TulipDrupal/ 
-#              https://gephi.org/
+#              https://gephi.org/ qui place les sommets en fonction de leurs communautés.
