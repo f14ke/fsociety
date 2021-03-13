@@ -6,6 +6,22 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 
+def split(txt, seps):
+    """ 
+    Solution pour un split avec de multiples séparateurs, 
+    comme spécifié ici https://stackoverflow.com/a/4697047/14320108
+    
+    Usage :
+    >>> split('ABC ; DEF123,GHI_JKL ; MN OP', (',', ';'))
+    ['ABC', 'DEF123', 'GHI_JKL', 'MN OP']
+    """
+    default_sep = seps[0]
+
+    # we skip seps[0] because that's the default separator
+    for sep in seps[1:]:
+        txt = txt.replace(sep, default_sep)
+    return [i.strip() for i in txt.split(default_sep)]
+
 def clear(string):
     """
     Avec une chaîne de caractères en entrée,
@@ -17,6 +33,7 @@ def clear(string):
         - sépare la phrase en une liste de mots
     Retourne la liste de mots.
     """
+
     return np.char.split( #Séparer les phrases en liste de mots. 
         np.char.lower( #Lowercase
             np.char.replace(
@@ -53,37 +70,42 @@ def extract_sentences():
 
                 for i in range(0, len(lines)): #Chaque ligne
 
-                    #ELLIOT: blabla
+                    #Phrase 'ELLIOT: blabla'
                     if re_line_Elliot_two_points.match(lines[i]):
-                        sentences.append(
-                            clear(#On enlève 'ELLIOT:'
-                                re.sub(
-                                    re_line_Elliot_two_points_Elliot, '', lines[i])
-                            )
-                        )
-                    #MR. ROBOT: blabla
-                    elif re_line_Robot_two_points.match(lines[i]):
-                        sentences.append(
-                            clear(
-                                re.sub(
-                                    re_line_Robot_two_points_Robot, '', lines[i])
-                            )
-                        )
-                    
+                        #On enlève 'ELLIOT:'
+                        string = re.sub(re_line_Elliot_two_points_Elliot, '', lines[i])
 
-                    #ELLIOT
-                    #blabla
-                    elif(re_line_Elliot_break.match(lines[i])):
-                        sentences.append(
-                            clear(lines[i+1])
-                        )
-                        
-                    #MR. ROBOT
-                    #blabla
-                    elif re_line_Robot_break.match(lines[i]):
-                        sentences.append(
-                            clear(lines[i+1])
-                        )
+                        #On récupère une liste de phrases séparées par ., ?, !, ???
+                        sentences_in_string = split(string, ('.','?','!','???'))
+                        for sentence in sentences_in_string:
+                            #On ajoute ici une phrase à la liste de phrases. La phrase est une liste de mots.
+                            sentences.append(clear(sentence))
+                                
+
+                    #Phrase 'MR. ROBOT: blabla'
+                    elif re_line_Robot_two_points.match(lines[i]):
+                        #On enlève 'MR. ROBOT:'
+                        string = re.sub(re_line_Robot_two_points_Robot, '', lines[i])
+
+                        #On récupère une liste de phrases séparées par ., ?, !, ???
+                        sentences_in_string = split(string, ('.','?','!','???'))
+                        for sentence in sentences_in_string:
+                            #On ajoute ici une phrase à la liste de phrases. La phrase est une liste de mots.
+                            sentences.append(clear(sentence))
+
+                    #Phrase 'ELLIOT
+                    #        blabla'
+                    #ou
+                    #       'MR. ROBOT
+                    #        blabla'
+                    # Dans ce cas on n'enlève rien, mais on récupère la deuxième ligne.
+                    elif(re_line_Elliot_break.match(lines[i]) or re_line_Robot_break.match(lines[i])):
+
+                        #On récupère une liste de phrases séparées par ., ?, !, ???
+                        sentences_in_string = split(lines[i], ('.','?','!','???'))
+                        for sentence in sentences_in_string:
+                            #On ajoute ici une phrase à la liste de phrases. La phrase est une liste de mots.
+                            sentences.append(clear(sentence))
     return sentences
 
 
@@ -100,27 +122,29 @@ def distance_append(nodes, node1, node2):
 
 
 
-def nodes_extract():
+def nodes_extract(sentences):
     """
     Retourne une liste de listes :
         nodes = [[node1, node2, distance], [...]]
     """
     nodes = []
 
-    sentences = extract_sentences()
     for sentence in sentences: #Pour chaque phrase
         sentence_list = sentence.tolist()
         for i in range(0, len(sentence_list)-1): #Pour chaque mot
             node = [sentence_list[i], sentence_list[i+1], 1]
             distance_append(nodes, sentence_list[i], sentence_list[i+1])
-    
     return nodes
     
 
 
-def graph():
-    G = nx.Graph()
-    nodes = nodes_extract()
+def graph(nodes):
+    """
+    Dessine un graphe et l'enregistre dans un fichier.
+    Enregistre aussi un fichier gexf pour un usage dans Gephi.
+    """
+    G = nx.DiGraph()
+    
 
     #for n in nodes:
     #    G.add_edge(n[0], n[1])
@@ -134,23 +158,31 @@ def graph():
       'edge_color' : 'tab:gray',
       'with_labels': False
     }
-    #nx.petersen_graph(G, with_labels = True,  pos=nx.spring_layout(G))
+
     plt.figure(figsize=(50,50))
     pos = nx.spring_layout(G,k=0.2, iterations=50) #50 : défaut
     nx.draw(G, pos, **options)
     plt.savefig("test.png")
+
+    linefeed=chr(10)
+    s = linefeed.join(nx.generate_gexf(G))
+    with open("graph.gexf", "w") as f:
+        f.write(s)
 
 
 
 
 
 if __name__ == '__main__':
-    graph()
+    sentences = extract_sentences()
+    nodes = nodes_extract(sentences)
+    graph(nodes)
 
 """
-A faire :
-Séparer les phrases qui se terminent par des . ? ! ???
-Créer les noeuds https://networkx.org/documentation/stable/tutorial.html ou bien https://pyvis.readthedocs.io/en/latest/tutorial.html
+Problèmes : 
+- Les virgules qui sont incorporées aux mots,
+- les synonymes, you're and you are -> mais est-ce un synonyme ?
+- elliot', '(v', 37] ?????
 """
 
 
@@ -191,3 +223,15 @@ nx.draw_networkx_edges(width=3, edge_color=blue, alpha=0.5, node_size=200)
 
 # outils de Paul https://tulip.labri.fr/TulipDrupal/ 
 #              https://gephi.org/ qui place les sommets en fonction de leurs communautés.
+
+
+
+"""
+Notre ami Gephi des idées de oui :
+- modularité résolution à 1.5
+- partition -> modularity class -> appliquer
+
+
+
+"""
+
