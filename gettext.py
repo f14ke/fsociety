@@ -113,6 +113,7 @@ def distance_append(nodes, node1, node2):
     """
     nodes = [[node1, node2, distance], [...]]
     Ajoute deux noeuds à la liste ou, s'ils y sont déjà, incrémente la valeur de leur distance.
+    Futur : se renseigner sur '2.4 Generating Random Text with Bigrams' https://www.nltk.org/book/ch02.html
     """
     for n in nodes: #Pour chaque noeud
         if(n[0] == node1 and n[1] == node2): #Si l'arrête existe déjà
@@ -126,6 +127,7 @@ def nodes_extract(sentences):
     """
     Retourne une liste de listes :
         nodes = [[node1, node2, distance], [...]]
+    Ce sont des bigrams (https://www.wikiwand.com/fr/N-gramme)
     """
     nodes = []
 
@@ -202,9 +204,9 @@ def sentence_generator():
                     print(sentences)
 
 if __name__ == '__main__':
-    sentences = extract_sentences()
-    nodes = nodes_extract(sentences)
-    graph(nodes)
+    #sentences = extract_sentences()
+    #nodes = nodes_extract(sentences)
+    #graph(nodes)
     sentence_generator()
 
 """
