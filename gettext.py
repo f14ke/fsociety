@@ -171,12 +171,41 @@ def graph(nodes):
 
 
 
-
+def sentence_generator():
+    re_filename = re.compile("^\w{3}(?:.txt)$")
+    for file in os.listdir(): #Pour chaque fichier
+        if re_filename.match(file): # Si le fichier est en .txt
+            with open(file, 'r') as f:
+                robot=f.read() 
+                keyword=robot.split()
+                 #print(keyword)
+                lists=[]
+                for i in range(len(keyword)-1): # Pour chaque ligne
+                    lists.append((keyword[i], keyword[i+1]))
+                #print(lists)
+                dictionnary={}
+                for begin, end in lists:
+                    if begin in dictionnary.keys():
+                        dictionnary[begin].append(end)
+                    else:
+                        dictionnary[begin]=[end]
+                #print(dictionnary)
+                first_word=np.random.choice(keyword)
+                while first_word.islower():
+                    first_word=np.random.choice(keyword)
+                    chain=[first_word]
+                    count=100
+                    for i in range(count):
+                        chain.append(np.random.choice(dictionnary[\
+                            chain[-1]]))
+                        sentences=' '.join(chain)
+                    print(sentences)
 
 if __name__ == '__main__':
     sentences = extract_sentences()
     nodes = nodes_extract(sentences)
     graph(nodes)
+    sentence_generator()
 
 """
 Problèmes : 
