@@ -180,7 +180,6 @@ if __name__ == '__main__':
 
 """
 Problèmes : 
-- Les virgules qui sont incorporées aux mots,
 - les synonymes, you're and you are -> mais est-ce un synonyme ?
 - elliot', '(v', 37] ?????
 """
