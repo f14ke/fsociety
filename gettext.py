@@ -147,13 +147,7 @@ def graph(nodes):
     """
     G = nx.DiGraph()
     
-
-    #for n in nodes:
-    #    G.add_edge(n[0], n[1])
-    # équivaut à
     G.add_weighted_edges_from(nodes)
-    print(len(nodes))
-    print(len(G.edges))
 
     options = {
       'node_color' : 'red',
@@ -165,11 +159,11 @@ def graph(nodes):
     plt.figure(figsize=(50,50))
     pos = nx.spring_layout(G,k=0.2, iterations=50) #50 : défaut
     nx.draw(G, pos, **options)
-    plt.savefig("test.png")
+    plt.savefig("graphe.png")
 
     linefeed=chr(10)
     s = linefeed.join(nx.generate_gexf(G))
-    with open("graph.gexf", "w") as f:
+    with open("graphe.gexf", "w") as f:
         f.write(s)
 
 
@@ -181,18 +175,18 @@ def sentence_generator():
             with open(file, 'r') as f:
                 robot=f.read() 
                 keyword=robot.split()
-                 #print(keyword)
+
                 lists=[]
                 for i in range(len(keyword)-1): # Pour chaque ligne
                     lists.append((keyword[i], keyword[i+1]))
-                #print(lists)
+
                 dictionnary={}
                 for begin, end in lists:
                     if begin in dictionnary.keys():
                         dictionnary[begin].append(end)
                     else:
                         dictionnary[begin]=[end]
-                #print(dictionnary)
+
                 first_word=np.random.choice(keyword)
                 while first_word.islower():
                     first_word=np.random.choice(keyword)
@@ -204,65 +198,9 @@ def sentence_generator():
                         sentences=' '.join(chain)
                     print(sentences)
 
+
 if __name__ == '__main__':
     sentences = extract_sentences()
     nodes = nodes_extract(sentences)
     graph(nodes)
     sentence_generator()
-
-"""
-Problèmes : 
-- les synonymes, you're and you are -> mais est-ce un synonyme ?
-- elliot', '(v', 37] ?????
-"""
-
-
-
-"""
-def graph(text):
-    G=nx.Graph()
-    # Separer les phrases avec ".","?","!","???""
-    for w in sentences:
-        sentence=text.split('.','?','!','???').clear()
-        for i in words:
-            try:
-                G.nodes[i]['count']+=1
-            except KeyError:
-                G.add_node(i)
-                G.nodes[i]['count']=1
-            for j in words:
-                if i==j or i in fin or j in fin:
-                    continue
-                if len(i)==0 or len(j)==0:
-                    continue
-                try:
-                    G.edges[i,j]['count']+=1
-                except KeyError:
-                    G.add_edge(i,j, count=1)
-    return G
-
-# lire le texte et créer les noeuds à partir du texte
-with open('aep1.txt') as f:
-    text=f.read()
-G=graph(text)
-
-plt.figure()
-nx.draw_networkx_edges(width=3, edge_color=blue, alpha=0.5, node_size=200) 
-"""
-# ne pas afficher les labels
-# tuto delbot https://colab.research.google.com/drive/1ZR9H2PMFfgI6fvL8AONGD8H2LN_aUdiB?usp=sharing&pli=1#scrollTo=Wk5ZzO8Keynk
-
-# outils de Paul https://tulip.labri.fr/TulipDrupal/ 
-#              https://gephi.org/ qui place les sommets en fonction de leurs communautés.
-
-
-
-"""
-Notre ami Gephi des idées de oui :
-- modularité résolution à 1.5
-- partition -> modularity class -> appliquer
-
-
-
-"""
-
