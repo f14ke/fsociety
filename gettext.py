@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
-
+import nltk
 
 def split(txt, seps):
     """ 
@@ -199,7 +199,8 @@ def sentence_generator():
                     print(sentences)
                     
                     '''
-                    def sentence_generator():
+                    
+def sentence_generator():
     re_filename = re.compile("^\w{3}(?:.txt)$")
     for file in os.listdir(): 
         if re_filename.match(file):
