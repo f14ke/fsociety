@@ -150,6 +150,7 @@ def graph(nodes):
 
     #for n in nodes:
     #    G.add_edge(n[0], n[1])
+    # équivaut à
     G.add_weighted_edges_from(nodes)
     print(len(nodes))
     print(len(G.edges))
@@ -204,9 +205,9 @@ def sentence_generator():
                     print(sentences)
 
 if __name__ == '__main__':
-    #sentences = extract_sentences()
-    #nodes = nodes_extract(sentences)
-    #graph(nodes)
+    sentences = extract_sentences()
+    nodes = nodes_extract(sentences)
+    graph(nodes)
     sentence_generator()
 
 """
