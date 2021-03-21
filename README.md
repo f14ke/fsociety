@@ -1,6 +1,6 @@
 f**k society.
 
-![image](https://github.com/f14ke/graphe.png)
+![image](https://github.com/f14ke/fsociety/graphe.png)
 
 ## Installation
 **Etape  1  :**  
