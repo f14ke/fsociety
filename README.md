@@ -1,6 +1,6 @@
 f**k society.
 
-! [alt text] (/graphe.png)
+! [Screenshot] (graphe.png)
 
 ## Installation
 **Etape  1  :**  
