@@ -4,20 +4,20 @@ f**k society.
 ## Installation
 **Etape  1  :**  
 Installer  un  IDE.  Voici  les  lignes  de  commandes  pour  installer  VisualStudio Code sur linux :
-* 1.  Mettez a jour les packages et installez les dépendances
+1.  Mettez a jour les packages et installez les dépendances
 ```
  $ sudo   apt   update
  $ sudo   apt   install   software−properties−common apt−transport−https wget
  ```
-* 2.  Importez la clé Microsoft GPG
+2.  Importez la clé Microsoft GPG
 ```
 $ wget−q https://packages.microsoft.com/keys/microsoft.asc−O− sudo apt−key add−
 ```
-*3. Activez le référentiel Visual Studio Code
+3. Activez le référentiel Visual Studio Code
 ```
 $  sudo add−apt−repository  ”deb[ a r c h=amd64 ] https://packages.microsoft.com/repos/vscode stable main”
 ```
-*4.  Installez Visual Studio Code
+4.  Installez Visual Studio Code
 ```
 $ sudo   apt   update 
 $ sudo   apt   install   code
