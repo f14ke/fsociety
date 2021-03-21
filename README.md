@@ -2,7 +2,7 @@ f**k society.
 
 
 ## Installation
-Etape  1  :  
+**Etape  1  :**  
 Installer  un  IDE.  Voici  les  lignes  de  commandes  pour  installer  VisualStudio Code sur linux :
 * 1.  Mettez a jour les packages et installez les dépendances
  $ sudo   apt   update
