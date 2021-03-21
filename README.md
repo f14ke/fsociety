@@ -1,5 +1,7 @@
 f**k society.
 
+![image](https://github.com/f14ke/graphe.png)
+
 ## Installation
 **Etape  1  :**  
 Installer  un  IDE.  Voici  les  lignes  de  commandes  pour  installer  VisualStudio Code sur linux :
