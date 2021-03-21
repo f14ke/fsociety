@@ -30,7 +30,9 @@ sudo   apt−get   install python3.8  python3−pip
 **Etape 3 :** Clonez le dépôt git. Utilisez cette option si vous avez configurer l’accès SSH à GitHub
 ```
 git  clone   git@github.com:f14ke/fsociety.git 
+```
 Ou celle-là, sinon
+```
 git clone  https://github.com/f14ke/fsociety.git
 ```
 **Etape 4 :** Mettez-vous dans le repertoire du projet, créez un environnement virtuelle
