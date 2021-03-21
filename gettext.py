@@ -5,6 +5,8 @@ import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 import nltk
+from nltk.tokenize import word_tokenize
+
 
 def split(txt, seps):
     """ 
@@ -167,7 +169,7 @@ def graph(nodes):
         f.write(s)
 
 
-
+"""
 def sentence_generator():
     re_filename = re.compile("^\w{3}(?:.txt)$")
     for file in os.listdir(): #Pour chaque fichier
@@ -198,16 +200,17 @@ def sentence_generator():
                         sentences=' '.join(chain)
                     print(sentences)
                     
-                    '''
+"""
                     
 def sentence_generator():
+    #nltk.download('punkt')
     re_filename = re.compile("^\w{3}(?:.txt)$")
     for file in os.listdir(): 
         if re_filename.match(file):
             with open(file, 'r') as f:
                 robot=f.read() 
                 keyword=word_tokenize(robot)
-                print(keyword)
+                #print(keyword)
                 lists=[]
                 for i in range(len(keyword)-1):
                     lists.append((keyword[i], keyword[i+1]))
@@ -228,9 +231,9 @@ def sentence_generator():
                         chain.append(np.random.choice(dictionnary[\
                             chain[-1]]))
                         sentences=' '.join(chain)
-                    #print(sentences)
+                    print(sentences)
 
-'''
+
 if __name__ == '__main__':
     sentences = extract_sentences()
     nodes = nodes_extract(sentences)
