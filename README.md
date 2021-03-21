@@ -1,6 +1,8 @@
 f**k society.
 
-! [Screenshot] (graphe.png)
+## Description
+
+Le projet est un graphe basé sur le script de Mr Robot. Dans les sommets du graphes, il y a les mots extraits du script pour former des phrases. Le programme génère également des phrases aléatoirement.
 
 ## Installation
 **Etape  1  :**  
