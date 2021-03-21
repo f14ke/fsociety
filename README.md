@@ -17,7 +17,7 @@ $ wget−q https://packages.microsoft.com/keys/microsoft.asc−O− sudo apt−k
 ```
 3. Activez le référentiel Visual Studio Code
 ```
-$  sudo add−apt−repository  ”deb[ a r c h=amd64 ] https://packages.microsoft.com/repos/vscode stable main”
+$  sudo add−apt−repository ”deb[arch=amd64] https://packages.microsoft.com/repos/vscode stable main”
 ```
 4.  Installez Visual Studio Code
 ```
