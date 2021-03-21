@@ -14,7 +14,7 @@ $  sudo add−apt−repository  ”deb[ a r c h=amd64 ] https://packages.microso
 *4.  Installez Visual Studio Code
 $ sudo   apt   update 
 $ sudo   apt   install   code
-Etape 2 : Installer python et pip
+**Etape 2 :** Installer python et pip
 sudo apt−get update
 sudo   apt−get   install python3.8  python3−pip
 Etape 3 : Clonez le dépôt git. Utilisez cette option si vous avez configurer l’accès SSH à GitHub
