@@ -5,8 +5,7 @@ f**k society.
 Le projet est un graphe basé sur le script de Mr Robot. Dans les sommets du graphes, il y a les mots extraits du script pour former des phrases. Le programme génère également des phrases aléatoirement.
 
 ## Installation
-**Etape  1  :**  
-Installer  un  IDE.  Voici  les  lignes  de  commandes  pour  installer  VisualStudio Code sur linux :
+**Etape  1  :** Installer un IDE. Voici les lignes de commandes pour installer VisualStudio Code sur linux :
 1.  Mettez a jour les packages et installez les dépendances
 ```
  $ sudo apt update
